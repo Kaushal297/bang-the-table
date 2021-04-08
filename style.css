@@ -1,16 +1,24 @@
+/* Things can't use because of IE8 compatibility */
+/* Grid / flexbox */
+/* calc function */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
     background-color: #3f406c;
     color: white;
 }
 
+/* nav starts */
 .circle,
-.logo {
+.logo,
+.container__box {
     display: inline-block;
 }
-/* can't use (grid / flexbox) because of IE8 compatibility */
+
 .company {
     background-color: #52547d;
 }
@@ -51,7 +59,7 @@
 
 .font-size-0 {
     font-size: 0;
-    width: 25%;
+    width: 450px;
     height: 38px;
     position: absolute;
     top: 0;
@@ -59,7 +67,7 @@
 }
 
 input[type=email] {
-    width: calc(100% - 50px);
+    width: 400px;
     height: 38px;
     padding: 5px 15px;
     background-color: #5a5f89;
@@ -86,7 +94,70 @@ input[type=email] {
     fill: #ffffff;
     background-color: inherit;
 }
+/* nav end */
 
+/* main starts */
 main {
-    height: 100vh;
+    width: 1000px;
+    margin: 100px auto 100px auto;
+    border: 1px solid red;
+}
+
+.container {
+    
+}
+
+.container__box {
+    /* height: 500px; */
+    border: 1px solid green;
+    position: relative;
+}
+
+.single{
+    width: 246px;
+}
+
+.double{
+    width: 498px;
+}
+
+img {
+    width: 100%;
+}
+
+.custom-circle {
+    position: relative;
+}
+
+.outer-circle {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 4px;
+}
+
+.inner-circle {
+    width: 4px;
+    height: 4px;
+    background-color: #3f406c;
+    margin: 7px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.custom-circle-bgcolor-1{
+    background-color: #ab8fd9;
+}
+
+.custom-circle__tag{
+    margin-left: 20px;
+}
+
+.container__box__bottom img,
+.container__box__bottom svg {
+    width: 20px;
+    height: 20px;
+    fill: #cccccc;
+    vertical-align: middle;
 }
