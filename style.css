@@ -1,10 +1,92 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background-color: #3f406c;
+    color: white;
 }
 
+.circle,
+.logo {
+    display: inline-block;
+}
 /* can't use (grid / flexbox) because of IE8 compatibility */
+.company {
+    background-color: #52547d;
+}
+
+.company h2 {
+    background-color: inherit;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.large {
+    width: 10px;
+    height: 10px;
+    margin: 0px 3px 0px 50px;
+}
+
+.medium {
+    width: 7px;
+    height: 7px;
+    margin: 1.5px;
+}
+
+.small {
+    width: 5px;
+    height: 5px;
+    margin: 2.5px;
+}
+
+
+.logo {
+    font-size: 16px;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.font-size-0 {
+    font-size: 0;
+    width: 25%;
+    height: 38px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+input[type=email] {
+    width: calc(100% - 50px);
+    height: 38px;
+    padding: 5px 15px;
+    background-color: #5a5f89;
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    color: rgb(209, 209, 209);
+}
+
+.button {
+    width: 50px;
+    height: 38px;
+    background-color: #a98bda;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.button__tick {
+    width: 10px;
+    height: 10px;
+    fill: #ffffff;
+    background-color: inherit;
+}
+
 main {
     height: 100vh;
 }
