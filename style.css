@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #3f406c;
+}
+
+/* can't use (grid / flexbox) because of IE8 compatibility */
+main {
+    height: 100vh;
+}
