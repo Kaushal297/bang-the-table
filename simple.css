@@ -1,3 +1,6 @@
+/* Things can't use because of IE8 compatibility */
+/* Grid / flexbox */
+/* calc() and many more */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +12,6 @@ body{
     background-color: #3f406c;
     color: white;
     font-size: 1.25rem;
-    font-family: 'Roboto', sans-serif;;
 }
 
 span,p,input {
@@ -22,7 +24,7 @@ h3 {
 }
 
 .large-font {
-    font-size: 3.96rem;
+    font-size: 5.96rem;
 }
 
 /* modular scale
@@ -37,16 +39,14 @@ h3 {
 */
 
 /* nav starts */
-.flex-center,
-.custom-circle div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.circle,
+.logo,
+.container__box {
+    display: inline-block;
 }
 
 .company {
-    justify-content: left;
-    margin-left: 30px;
+    background-color: #52547d;
 }
 
 .company h2 {
@@ -54,26 +54,28 @@ h3 {
 }
 
 .circle {
-    display: inline-block;
     border-radius: 50%;
     background-color: #ffffff;
-    margin-right: 10px;
 }
 
 .large {
     width: 10px;
     height: 10px;
+    margin: 0px 3px 0px 50px;
 }
 
 .medium {
-    width: 6px;
-    height: 6px;
+    width: 7px;
+    height: 7px;
+    margin: 1.5px;
 }
 
 .small {
-    width: 3px;
-    height: 3px;
+    width: 5px;
+    height: 5px;
+    margin: 2.5px;
 }
+
 
 .logo {
     font-size: 16px;
@@ -84,12 +86,10 @@ h3 {
 .font-size-0 {
     font-size: 0;
     width: 450px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: #52547d;
+    height: 38px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 input[type=email] {
@@ -124,19 +124,13 @@ input[type=email] {
 
 /* main starts */
 main {
-    margin: 50px 0;
+    width: 1000px;
+    margin: 100px auto 100px auto;
+    /* border: 1px solid red; */
 }
 
 .container {
-    width: 1000px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.container__box {
-    height: 500px;
-    background-color: #5a5f89;
-    margin-bottom: 5px;
+    
 }
 
 .single{
@@ -144,34 +138,46 @@ main {
 }
 
 .double{
-    width: 497px;
+    width: 492px;
 }
 
-.container__box img {
+.container__box {
+    height: 490px;
+    background-color: #5a5f89;
+    position: relative;
+    margin: 0px 5px 5px 0px;
+}
+
+.container__box:nth-child(3),
+.container__box:nth-child(7),
+.container__box:last-child {
+    margin: 0;    
+}
+
+img {
     width: 100%;
 }
 
 .custom-circle {
-    justify-content: flex-start;
-    margin-bottom: 10px;
-}
-
-.custom-circle div {
-    width: 10px;
+    position: relative;
+    margin-bottom: 15px;
 }
 
 .outer-circle {
     width: 10px;
     height: 10px;
-    margin: 0;
+    position: absolute;
+    margin: 4px;
 }
 
 .inner-circle {
     width: 4px;
     height: 4px;
-    background-color: #5a5f89;
+    background-color: #3f406c;
+    margin: 7px;
     position: absolute;
-    margin: 0;
+    top: 0;
+    left: 0;
 }
 
 .custom-circle-bgcolor-1{
@@ -183,7 +189,7 @@ main {
 }
 
 .custom-circle-bgcolor-3{
-    background-color: #d2d2d2;
+    background-color: #55566b;
 }
 
 .custom-circle-bgcolor-4{
@@ -207,7 +213,7 @@ main {
 }
 
 .custom-circle__tag{
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .container__box__bottom {
@@ -230,7 +236,7 @@ main {
 }
 
 .container__box__content{
-    padding: 20px;
+    padding: 19px;
 }
 
 .container__box div div h3 {
