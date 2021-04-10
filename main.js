@@ -13,13 +13,5 @@ allPtags.forEach(singleP => {
                 break;
             }
         }
-        
-        console.log(requiredString);
-        // var shortPvalue = gettingPValue.splice(185, 0, '...');
-        // starting index 185 check for space and then insert '...'(element) into the string and use <br> (element) 
-        console.log(gettingPValue);
-        console.log(grandParent);
-        console.log(singleP);
-        console.log('modify string')
     }
 });
